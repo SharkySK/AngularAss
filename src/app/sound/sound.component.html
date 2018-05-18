@@ -1,0 +1,10 @@
+<!--<div class="synth">
+	<canvas #waveformElement></canvas>
+	<canvas #fftElement id="fftElement"></canvas>
+</div>-->
+<div>
+  <mat-slider min="1" max="5" step="0.5" [(ngModel)]="value"></mat-slider>
+</div>
+<div>
+    <knob class="skin1" #myknob1 [min]="10" [max]="200" [value]="80" [startDegree]="200"  [endDegree]="120"></knob>
+</div>

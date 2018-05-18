@@ -1,0 +1,43 @@
+h3{
+  color:red;
+}
+.container{
+  width: 144px;
+  overflow: hidden;
+  border: 7px solid #FAFAFA;
+  padding: 20px;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+  background: #272727;
+  float:left;
+  margin:40px;
+}
+.container.degree{
+  background: #F0F0F0;
+  width: 350px;
+}
+.info.degree{
+  color: #888888;
+  font-family: monospace;
+  text-align: center;
+  margin-top: 7px;
+  font-size: 20px;
+}
+knob{
+  background-size:contain;
+  margin-left: 20px;
+  width:100px;
+  height:100px;
+  display:block;
+}
+knob.skin3{
+  background:url('/skins/skin3_back.svg');
+  background-size: contain;
+  width:300px;
+  height:300px;
+}
+knob.skin3 /deep/ .knob{
+  background:url('/skins/skin3_front.svg');
+  background-size: contain;
+  width:300px;
+  height:300px;
+}
