@@ -1,8 +1,13 @@
 <div class="devices">
+	<a routerLink = "Message" > Messages </a>
+	<a routerLink = "Sounds" > Sound </a>
 	<figure *ngFor="let device of devices">
 		<div>
 			<span>{{device.name}}</span>
 			<span>{{device.name}}</span>
+			
 		</div>
 	</figure>
 </div>
+<router-outlet></router-outlet>
+

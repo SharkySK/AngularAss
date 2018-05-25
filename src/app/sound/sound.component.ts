@@ -4,6 +4,7 @@ import Tone from 'tone';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs';
 import { MatSliderModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 const noteTransforms = {
   11: 'A0', 12: 'A#0', 13: 'B0',
@@ -26,6 +27,8 @@ const Recorder = window['Recorder'];*/
   styleUrls: ['./sound.component.scss']
 })
 export class SoundComponent implements OnInit {
+
+  testString = "hello";
   value = 0;
   //@ViewChild('fftElement') fftElement;
   //@ViewChild('waveformElement') waveformElement;

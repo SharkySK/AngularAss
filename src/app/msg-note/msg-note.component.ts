@@ -1,5 +1,6 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 declare const navigator: any;
 

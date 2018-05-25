@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { from } from 'rxjs'
 import { Observable} from 'rxjs/Observable';
 import 'rxjs/Rx';
+import { ActivatedRoute } from '@angular/router';
 
 declare const navigator: any;
 
@@ -12,9 +13,10 @@ declare const navigator: any;
 })
 
 export class MidiComponent implements OnInit {
+
   devices: any[] = null;
 
-  constructor() {}
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.fetchDevices();
